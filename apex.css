@@ -1,0 +1,78 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation menu styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #149461; /* Initial blue gradient background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 55px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+    background-color: #4b44d1; /* Darker color on scroll */
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00; /* Color change on hover */
+}
+
+/* Section styling */
+section {
+    height: 100vh;
+    padding: 100px;
+}
+
+#home {
+    background-color: #e0f7fa;
+}
+
+#about, #services, #contact {
+    background-color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
